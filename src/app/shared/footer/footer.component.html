@@ -1,0 +1,19 @@
+<!-- Footer -->
+<footer id="footer">
+  <a href="#" class="info fa fa-info-circle"><span>About</span></a>
+  <div class="inner">
+    <div class="content">
+      <h3>{{infopaginaService.info.titulo}}</h3>
+      <p>{{infopaginaService.info.descricao}}.</p>
+    </div>
+    <div class="copyright">
+      <h3>Siga me</h3>
+      <ul class="icons">
+        <li><a target="_blank" [href]="infopaginaService.info.twitter" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a target="_blank" [href]="infopaginaService.info.facebook" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a target="_blank" [href]="infopaginaService.info.instagram" class="icon fa-instagram"><span class="label">Instagram</span></a></li>        
+      </ul>
+      &copy; Contato. Design: <a href="mailTo:{{infopaginaService.info.email}}" class="rk-dark-color ">{{infopaginaService.info.email}} </a>.
+    </div>
+  </div>
+</footer>

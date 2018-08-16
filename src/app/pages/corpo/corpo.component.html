@@ -1,0 +1,28 @@
+
+<!-- Header-->
+<header id="header">
+  <div class="inner">
+    <div class="content">
+      <h1>{{infopaginaService.info.titulo}}</h1>
+      <h2>Um sistema para um <br />
+      álbum de família.</h2>
+      <a routerLink="" class="button big alt"><span>Vamos lá</span></a>
+    </div>
+    <a routerLink="sobre" class="button hidden"><span>Vamos lá</span></a>
+  </div>
+</header>
+
+<!-- Main -->
+<div id="main">
+  <div class="inner">
+    <div class="columns">
+
+      <!-- Column 1 (horizontal, vertical, horizontal, vertical) -->
+        <div  *ngFor="let fotos of fotosAlbumPaginaService.fotos" class="image fit">
+          <a routerLink="/sobre/{{fotos.cod}}"><img src="assets/images/{{fotos.url}}.jpg" alt="" /></a>
+        </div>
+        
+
+    </div>
+  </div>
+</div>

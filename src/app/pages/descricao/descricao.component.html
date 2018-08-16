@@ -1,0 +1,27 @@
+<section *ngIf="fotos">
+<!-- Header -->
+  <header id="header" class="preview">
+    <div class="inner">
+     
+      <a routerLink="" class="button hidden"><span>Let's Go</span></a>
+    </div>
+  </header>
+
+<!-- Main -->
+  <div id="preview">
+    <div class="inner">
+      <div class="image fit">
+        <img src="assets/images/{{ id }}/pic.jpg" alt="" />
+      </div>
+      <div class="content">
+        <header>
+          <h2>{{fotos.subtitulo1}}</h2>
+        </header>
+        <!--<p>{{fotos.desc1}}.</p>-->
+        
+      </div>
+    </div>
+    <a href="detail1.html" class="nav previous"><span class="fa fa-chevron-left"></span></a>
+    <a href="detail2.html" class="nav next"><span class="fa fa-chevron-right"></span></a>
+  </div>
+  </section>
