@@ -21,7 +21,7 @@ private carregarFotos() {
 
   this.http.get('https://album-html.firebaseio.com/fotos.json')
   .subscribe( (resp: FotoInterface[]) => {
-      console.log(resp);
+      // console.log(resp);
       this.fotos = resp;
       this.carregando = false;
   });

@@ -27,7 +27,7 @@ export class DescricaoComponent implements OnInit {
       .subscribe( (fotos: DescricaoInterface) => {
         this.id = parametros['id'];
         this.fotos = fotos;
-        console.log(fotos);
+        // console.log(fotos);
       });
     });
   }

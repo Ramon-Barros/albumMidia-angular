@@ -8,6 +8,10 @@ import { InfoPaginaService } from '../../services/info-pagina.service';
 })
 export class FooterComponent implements OnInit {
 
+  ano: string = new Date().toLocaleDateString();
+
+
+
   constructor(public infopaginaService: InfoPaginaService) { }
 
   ngOnInit() {

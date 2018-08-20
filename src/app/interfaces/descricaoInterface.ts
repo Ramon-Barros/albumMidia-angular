@@ -6,4 +6,6 @@ export interface DescricaoInterface {
   resumen: string;
   subtitulo1: string;
   subtitulo2: string;
+  cod: string;
+  cod1: string;
 }
